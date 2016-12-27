@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* FONTS */
+@font-face { 
+	font-family: "R-Regular"; 
+	src: url("../f/Roboto-Regular.ttf"); 
+}
+
+@font-face {
+	font-family: "R-Thin";
+	src: url("../f/Roboto-Thin.ttf");
+}
+
+@font-face {
+	font-family: "R-Bold";
+	src: url("../f/Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: "R-Italic";
+	src: url("../f/Roboto-Italic.ttf");
+}
+
+@font-face {
+	font-family: "R-CondReg";
+	src: url("../f/RobotoCondensed-Regular.ttf");
+}
+
+.thin {
+	font-family: "R-Thin";
+}
+
+.bold {
+	font-family: "R-Bold";
+}
+
+.ita {
+	font-family: "R-Italic";
+}
+
+.head {
+	font-family: "R-CondReg";
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+}
+
+.thin, .bold, .ita {
+	color: #C0B283;
+}
+
+body {
+	margin: 0px;
+	background-color: #373737;
+	font-family: "R-Regular";
+	color: #DCD0C0;
+	font-size: 18px;
+}
+
+a:visited, a:link {
+	color: #F4F4F4;
+	text-decoration: none;
+}
+
+#error {
+	color: red;
+	text-align: center;
+}
+
+.cl {
+	float: left;
+	width: 33.33%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.divl {
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	border-top: 0.5px solid white;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+div.next-region {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    border-left: 1px solid white;
+    background: #CCCCCC;
+    cursor: pointer;
+}
+
+td {
+	padding: 4px;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+tr:nth-child(even) {
+	background: rgba(255, 255, 255, 0.075);
+}
+
+th {
+	padding: 4px;
+}
+
+#c {
+	width: 95%;
+	height: auto;
+	left: 2.5%;
+	position: absolute;
+	margin: 0 auto;
+}
+
+#imp {
+	text-align: center;
+	margin-top: 5px;
+}
+
+#queuefirst {
+	display: none;
+}
+
+#total {
+	text-align: center;
+}
+
+.divl-desc.next-region {
+	color: #C0B283 !important;
+	font-size: 25px;
+}
+
+#patience {
+	color: orange;
+	text-align: center;
+}
+
+#gr {
+	color: grey;
+}
+
+#re {
+	color: red;
+}
+
+#or {
+	color: orange;
+}
+
+#gre {
+	color: green;
+}
+
+@media (max-width:2200px) {
+	.cl {
+		width: 50%;
+	}
+}
+
+@media (max-width:1600px) {
+	.divl {
+		font-size: 14px;
+	}
+	#upd-row {
+		display: none;
+	}
+}
+
+@media (max-width:1450px) {
+	.cl {
+		width: 100%;
+	}
+	#name {
+		 text-align: left;
+	}
+}
+
