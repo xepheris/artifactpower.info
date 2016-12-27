@@ -625,7 +625,7 @@ elseif(isset($_GET['s']) && isset($_GET['r']) && isset($_GET['c']) && !isset($_G
 			if($result != 'total') {
 				$old_data = mysqli_fetch_array(mysqli_query($stream, "SELECT `" .$result. "` FROM `ap_past` WHERE `c` = '" .$info['c']. "' AND `r` = '" .$info['r']. "' AND `s` = '" .addslashes($info['s']). "'"));
 				$old = $info[$result]-$old_data[$result];
-				if($old != '0') {			
+				if($old != '0' && $old != $info[$result]) {			
 					array_push($old_array, $old);
 					$former = '<span id="gr">(+' .$old. ')</span>';
 				}
